@@ -2,7 +2,7 @@ kubectl exec -it -n elk elasticsearch-master-0 sh
 bin/elasticsearch-certutil ca --out /tmp/elastic-stack-ca.p12 --pass changeit
 bin/elasticsearch-certutil cert --name elasticsearch-master --dns elasticsearch-master --ca /tmp/elastic-stack-ca.p12 --pass changeit --ca-pass changeit --out /tmp/elastic-certificates.p12
 exit
-kubectl cp -n elk elasticsearch-master-0:/tmp/elastic-certificates.p12 ./
+kubectl cp -n elk elasticsearch-master-0:/tmp/elastic-certificates.p12 .
 openssl pkcs12 -nodes -passin pass:changeit -in elastic-certificates.p12 -out elastic-certificate.pem
 openssl x509 -outform der -in elastic-certificate.pem -out elastic-certificate.crt
 kubectl delete secret -n elk elastic-certificate-pem
