@@ -16,3 +16,6 @@ kubectl create secret generic elastic-certificate-crt --from-file=elastic-certif
 
           - name: "ELASTICSEARCH_HOSTS"
             value: "https://elasticsearch-master:9200"
+
+    server.ssl.certificate: /usr/share/kibana/config/certs2/elastic-certificate.pem
+    server.ssl.key: /usr/share/kibana/config/certs2/elastic-certificate.pem
