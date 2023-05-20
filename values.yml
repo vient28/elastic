@@ -12,3 +12,7 @@ kubectl delete secret -n elk elastic-certificates
 kubectl create secret generic elastic-certificates --from-file=elastic-certificates.p12  -n elk
 kubectl create secret generic elastic-certificate-pem --from-file=elastic-certificate.pem -n elk
 kubectl create secret generic elastic-certificate-crt --from-file=elastic-certificate.crt -n elk
+
+
+          - name: "ELASTICSEARCH_HOSTS"
+            value: "https://elasticsearch-master:9200"
