@@ -48,6 +48,8 @@ xpack.security.authc.realms.basic.basic1:
     order: 0
 https://appdevmusings.com/azure-kubernetes-service-aks-azure-ad-saml-based-single-sign-on-to-secure-elasticsearch-and-kibana-and-securing-communications-in-elk
 
+NOTE: For version 8 and above, Reply URL should end with /api/security/saml/callback instead of /api/security/v1/saml
+
 
 Create new User Claim
 
