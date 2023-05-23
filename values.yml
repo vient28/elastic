@@ -39,10 +39,10 @@ xpack.security.authc.realms.saml.saml1:
     order: 2
     idp.metadata.path: "/usr/share/elasticsearch/config/Elasticsearch.xml"
     idp.entity_id: "AZURE_AD_IDENTIFIER_URL"
-    sp.entity_id:  "https://KIBANA_URL:5601/"
-    sp.acs: "https://KIBANA_URL:5601/api/security/v1/saml"
-    sp.logout: "https://KIBANA_URL:5601/logout"
-    attributes.principal: nameid
+    sp.entity_id:  "https://KIBANA_URL/"
+    sp.acs: "https://KIBANA_URL/api/security/v1/saml/callback"
+    sp.logout: "https://KIBANA_URL/logout"
+    attributes.principal: "http://schemas.microsoft.com/ws/2005/05/identity/claims/name"
     attributes.groups: "http://schemas.microsoft.com/ws/2008/06/identity/claims/role"
 xpack.security.authc.realms.basic.basic1:
     order: 0
