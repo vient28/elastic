@@ -47,3 +47,10 @@ xpack.security.authc.realms.saml.saml1:
 xpack.security.authc.realms.basic.basic1:
     order: 0
 https://appdevmusings.com/azure-kubernetes-service-aks-azure-ad-saml-based-single-sign-on-to-secure-elasticsearch-and-kibana-and-securing-communications-in-elk
+
+
+Create new User Claim
+
+Name: name
+namespace: http://schemas.microsoft.com/ws/2008/06/identity/claims/role
+attributes: user.assignedroles
