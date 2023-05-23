@@ -51,4 +51,3 @@ elasticsearch.hosts: ["https://elasticsearch-master:9200"]
               sp.logout: "https://KIBANA_URL:5601/logout"
               attributes.principal: nameid
               attributes.groups: "http://schemas.microsoft.com/ws/2008/06/identity/claims/role"
-  role_mapping.yml: |
