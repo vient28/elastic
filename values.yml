@@ -54,3 +54,8 @@ Create new User Claim
 Name: name
 namespace: http://schemas.microsoft.com/ws/2008/06/identity/claims/role
 attributes: user.assignedroles
+
+Edit manifest
+
+ Azure Active Directory > App Registrations > Select Application and Edit Manifest
+
