@@ -24,3 +24,7 @@ kubectl create secret generic elastic-certificate-crt --from-file=elastic-certif
 elasticsearch.ssl.certificateAuthorities: [ "/usr/share/kibana/config/certs2/elastic-certificate.pem" ]
 elasticsearch.ssl.verificationMode: none
 elasticsearch.hosts: ["https://elasticsearch-master:9200"]
+
+
+basic.basic1:
+  order: 1
