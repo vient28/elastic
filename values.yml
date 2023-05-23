@@ -44,6 +44,6 @@ xpack.security.authc.realms.saml.saml1:
     sp.logout: "https://KIBANA_URL:5601/logout"
     attributes.principal: nameid
     attributes.groups: "http://schemas.microsoft.com/ws/2008/06/identity/claims/role"
-xpack.security.authc.realms.saml.basic.basic1:
+xpack.security.authc.realms.basic.basic1:
     order: 0
 https://appdevmusings.com/azure-kubernetes-service-aks-azure-ad-saml-based-single-sign-on-to-secure-elasticsearch-and-kibana-and-securing-communications-in-elk
