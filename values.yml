@@ -27,4 +27,4 @@ elasticsearch.hosts: ["https://elasticsearch-master:9200"]
 
 
 basic.basic1:
-  order: 1
+  order: 0
