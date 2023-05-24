@@ -26,7 +26,13 @@ elasticsearch.ssl.verificationMode: none
 elasticsearch.hosts: ["https://elasticsearch-master:9200"]
 
 
-    xpack.security.authProviders: [saml, basic]
+    xpack.security.authProviders:
+      saml.saml1:
+        order: 0
+        realm: saml1
+        description: "Login AD"
+      basic.basic1:
+        order: 1
     server.xsrf.whitelist: [/api/security/v1/saml]
 
 
