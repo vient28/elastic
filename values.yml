@@ -62,7 +62,7 @@ Edit manifest
  Azure Active Directory > App Registrations > Select Application and Edit Manifest
 
 
-curl -u elastic -k -X POST "https://localhost:9200/_security/role_mapping/saml-superusers?pretty" -H 'Content-Type: application/json' -d'
+curl -u elastic:pass -k -X POST "https://localhost:9200/_security/role_mapping/saml-superusers?pretty" -H 'Content-Type: application/json' -d'
 {
   "roles": [ "superuser" ],
   "enabled": true,
@@ -72,8 +72,7 @@ curl -u elastic -k -X POST "https://localhost:9200/_security/role_mapping/saml-s
       { "field" : { "groups" : "superuser" } }
     ]
   }
-}
-'
+}'
 
 networkPolicy:
   transport:
