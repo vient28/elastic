@@ -8,5 +8,5 @@ spec:
     hostnames:
     - "kibana.secure.verinovum.com"
   containers:
-  - name: cat-hosts
-    image: busybox:1.28
+    - name: test
+      image: nginx
