@@ -1,0 +1,7 @@
+       hostAliases:
+       - ip: 172.18.40.171
+         hostnames:
+         - kibana.secure.verinovum.com
+       - ip: 10.0.32.12
+         hostnames:
+         - app.south-central-us.privatelink.snowflakecomputing.com
