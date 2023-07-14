@@ -5,6 +5,8 @@
 Clone this repo then go to opentelemetry folder
 
 ```
+git clone https://github.com/vient28/elastic.git
+cd elastic
 cd opentelemetry
 ```
 
@@ -19,4 +21,9 @@ Deploy
 ```
 docker compose up --no-build
 
+```
+Check if running
+
+```
+docker ps | grep otel
 ```
