@@ -2,7 +2,11 @@
 
 # opentelemetry
 
-Go to opentelemetry folder
+Clone this repo then go to opentelemetry folder
+
+```
+cd opentelemetry
+```
 
 ```
 export DT_API_TOKEN=<token>
