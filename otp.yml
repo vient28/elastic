@@ -13,3 +13,5 @@ https://github.com/vient28/elastic/releases/download/v1.0.0/otelcol.exe
 https://github.com/vient28/elastic/releases/download/v1.0.0/LICENSE
 
 https://github.com/vient28/elastic/releases/download/v1.0.2/nssm.exe
+
+nssm.exe set opentel AppEnvironmentExtra NO_WINDOWS_SERVICE=1
