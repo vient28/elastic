@@ -1,5 +1,5 @@
-"C:\path\to\opentelemetry-collector-windows-amd64.exe" --config "C:\path\to\config.yaml" --service install
-net start opentelemetry-collector
+"C:\opentelemetry\otelcol.exe" --config "C:\opentelemetry\config.yaml" --service install
+net start otelcol
 net start
 
 https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.81.0
