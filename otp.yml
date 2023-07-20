@@ -1,18 +1,18 @@
 processors: 
   # Processor to generate (delta temporality) metrics from spans. 
   spanmetrics/dynatrace: 
-   metrics_exporter: otlphttp/dynatrace 
-   aggregation_temporality: AGGREGATION_TEMPORALITY_DELTA 
+    metrics_exporter: otlphttp/dynatrace 
+    aggregation_temporality: AGGREGATION_TEMPORALITY_DELTA 
  
 service: 
   pipelines: 
    # Trace pipeline for exporting to dynatrace. 
-   traces/dynatrace: 
-    receivers: [otlp] 
-    processors: [batch, spanmetrics/dynatrace] 
-    exporters: [otlphttp/dynatrace] 
+    traces/dynatrace: 
+      receivers: [otlp] 
+      processors: [batch, spanmetrics/dynatrace] 
+      exporters: [otlphttp/dynatrace] 
    # Metrics pipeline for exporting to dynatrace. 
-   metrics/dynatrace: 
-    receivers: [otlp] 
-    processors: [batch] 
-    exporters: [otlphttp/dynatrace]
+    metrics/dynatrace: 
+      receivers: [otlp] 
+      processors: [batch] 
+      exporters: [otlphttp/dynatrace]
