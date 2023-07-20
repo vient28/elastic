@@ -1,9 +1,10 @@
 # kubernetes deployment
 
 Copy my-values-file.yaml 
+
 ```
 helm install my-otel-demo open-telemetry/opentelemetry-demo --values my-values-file.yaml
-``
+```
 
 # elastic
 
