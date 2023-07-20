@@ -1,4 +1,5 @@
 "C:\opentelemetry\otelcol.exe" --config="C:\opentelemetry\otelcol.yaml"
+--config "otelcol.yaml"
 net start otelcol
 net start
 
