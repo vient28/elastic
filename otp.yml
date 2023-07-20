@@ -1,4 +1,4 @@
-"C:\opentelemetry\otelcol.exe" --config "C:\opentelemetry\otelcol.yaml" --service install
+"C:\opentelemetry\otelcol.exe" --config="C:\opentelemetry\otelcol.yaml"
 net start otelcol
 net start
 
