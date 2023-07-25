@@ -5,10 +5,10 @@ helm create message-api
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: {{ include "test.fullname" . }}
+  name: {{ include "message-api.fullname" . }}
   namespace: {{ .Values.namespace }}
   labels:
-     {{- include "test.labels" . | nindent 4 }}
+     {{- include "message-api.labels" . | nindent 4 }}
 {{- with .Values.configmap.configuration }}
 data: 
   {{- toYaml . | nindent 2 }}
@@ -20,10 +20,10 @@ data:
 apiVersion: v1
 kind: Secret
 metadata:
-  name: {{ include "test.fullname" . }}
+  name: {{ include "message-api.fullname" . }}
   namespace: {{ .Values.namespace }}
   labels:
-     {{- include "test.labels" . | nindent 4 }}
+     {{- include "message-api.labels" . | nindent 4 }}
 {{- with .Values.configmap.configuration }}
 type: Opaque
 data: 
