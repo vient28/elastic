@@ -1,6 +1,8 @@
 helm create message-api
 
 
+Create file config.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -14,6 +16,8 @@ data:
       {{- end }}
 {{- end }}
 
+
+Create file secret.yaml 
 
 apiVersion: v1
 kind: Secret
