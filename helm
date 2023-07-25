@@ -6,7 +6,8 @@ helm create message-api
 
 Add this annotation to deployment.yaml
 
-reloader.stakater.com/auto: "true"
+  annotations:
+    reloader.stakater.com/auto: "true"
 
 Create file config.yaml
 
