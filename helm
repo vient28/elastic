@@ -1,13 +1,15 @@
 helm create message-api
 
 
+Add this annotation to deployment.yaml
+
+reloader.stakater.com/auto: "true"
+
 Create file config.yaml
 
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  annotations:
-    reloader.stakater.com/match: "true"
   name: {{ include "message-api.fullname" . }}
   namespace: {{ .Values.namespace }}
   labels:
@@ -24,8 +26,6 @@ Create file secret.yaml
 apiVersion: v1
 kind: Secret
 metadata:
-  annotations:
-    reloader.stakater.com/search: "true"
   name: {{ include "message-api.fullname" . }}
   namespace: {{ .Values.namespace }}
   labels:
